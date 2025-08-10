@@ -14,8 +14,24 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model User {
-  id    String @id @default(uuid())
-  name String
+  id           String  @id @default(uuid())
+  username     String  @unique
+  passwordHash String?
+}
+
+model Movie {
+  id                  String   @id @default(uuid())
+  movieTitle          String
+  synopsis            String
+  releaseDate         DateTime
+  posterUrl           String
+  backdropUrl         String
+  genres              String[]
+  runtime             Int? // In Minutes
+  tmdbId              String?
+  imdbId              String?
+  recommendationReady Boolean?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime?
 }
