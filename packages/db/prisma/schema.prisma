@@ -29,7 +29,7 @@ model Movie {
   backdropUrl         String
   genres              String[]
   runtime             Int? // In Minutes
-  tmdbId              String?
+  tmdbId              Int?
   imdbId              String?
   recommendationReady Boolean?
   createdAt           DateTime @default(now())

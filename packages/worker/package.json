@@ -1,11 +1,8 @@
 {
-  "name": "@repo/redis",
+  "name": "worker",
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "exports": {
-    "./client" : "./index.ts"
-  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -13,6 +10,9 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "redis": "^5.8.0"
+    "axios": "^1.11.0",
+    "@repo/db": "*",
+    "@repo/redis": "*",
+    "@repo/pinecone": "*"
   }
 }

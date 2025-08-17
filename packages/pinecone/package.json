@@ -1,11 +1,11 @@
 {
-  "name": "@repo/redis",
+  "name": "@repo/pinecone",
   "module": "index.ts",
   "type": "module",
-  "private": true,
   "exports": {
     "./client" : "./index.ts"
   },
+  "private": true,
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -13,6 +13,6 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "redis": "^5.8.0"
+    "@pinecone-database/pinecone": "^6.1.2"
   }
 }

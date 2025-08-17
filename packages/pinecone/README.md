@@ -1,4 +1,4 @@
-# redis
+# pinecone
 
 To install dependencies:
 

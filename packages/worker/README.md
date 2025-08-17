@@ -1,4 +1,4 @@
-# redis
+# worker
 
 To install dependencies:
 
